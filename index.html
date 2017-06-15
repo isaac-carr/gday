@@ -1,9 +1,156 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>IDC</title>
+	<title>Isaac Carr</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"ls
+  >
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/end.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/mid.css') }}">
 </head>
 <body>
+	<nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#codebrainery-toggle-nav" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">isaaccarr.xyz</a>
+      </div>
 
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/about">About</a></li>
+          <li><a href="/projects">Projects</a></li>
+          <li><a href="/resume">Resume</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+    </div> <!-- close container div -->
+  </nav> <!-- close navbar nav -->
+
+    <!-- HEADER -->
+    {% if page%}
+    <div class="container">
+    	<div class="page-header">
+    		<h1>{{ page }}</h1>
+    	</div>
+    </div>
+    {% endif %}
+
+    {% if page == 'About' %}
+   	<div class="container">
+
+   	</div>
+    {% elif page == 'Projects'%}
+    <div class="container">
+   			
+   	</div>
+   	{% elif page == 'Resume'%}
+    <div class="container">
+      <!--EDUCATION -->
+      <h2> Education </h2>
+      <div class="table-responsive">
+        <table class="table">
+          <!-- Uni -->
+          <tr> 
+            <td class="resume_year"> 
+              2015&ndash;Present
+            </td>
+            <td class="resume_body"> 
+              <div class="resume_job_title"> 
+                <b>B. Mechantronic Engineering (Hons)/B. Computer Science </b>\\ University of NSW, Sydney
+              </div>
+              <div class="resume_job_body"> 
+                <ul>
+                  <li><i>Average Mark:</i> 77.083 (Distinction)</li>
+                  <li><i>High Distinctions:</i> Higher Algebra, Higher Calculus, Engineering Design 1 & 2, Engineering Mathematics</li>
+                  <li><i>Scholarships:</i> Hon. Jack Beale (2015), UNSW Business School Summer Scholar (2016)
+                </ul>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="resume_year">
+              2013&ndash;14
+            </td>
+            <td>
+              <div class="resume_job_title">
+                <b>Higher School Certificate </b> \\ Xavier Catholic College, Ballina
+              </div>
+              <div class="resume_job_body">
+                <ul>
+                  <li><i>ATAR:</i> 98.90</li>
+                  <li>School Captain, member of St. Vincent de Paul, Clean up Australia Day, Leos
+                </ul>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div> <!-- end table --> 
+
+      <!-- WORK EXPERIENCE --> 
+   		<h2> Leadership, Managerial and Educational Experience </h2> 
+      <div class="table-responsive">
+        <table class="table">
+          <!-- TEACHING -->
+          <tr> 
+            <td class="resume_year"> 
+              2015-16
+            </td>
+            <td>
+              <div class="resume_job_title">
+                <b>Casual Academic Tutor </b> \\ University of NSW, Sydney
+              </div>
+              <div class="resume_job_body">
+                <ul>
+                  <li><a href="https://webcms3.cse.unsw.edu.au/COMP1000/17s1/">COMP1000 16s1, 17s1 </a> &ndash; Taught Microsoft Excel, Access (Database) and an introduction to HTML/CSS.</li>
+                  <li><a href="http://webapps.cse.unsw.edu.au/cse/core/COMP1531.php">COMP1531 17s2</a> &ndash; I will be commencing tutoring this course in July, 2017.</li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="resume_year">
+            </td>
+        </table>
+      </div> <!-- end table --> 
+
+      <!-- TEECHNICAL EXPERIENCE --> 
+      <h2> Engineering Experience </h2> 
+      <div class="table-responsive">
+        <table class="table">
+          <!-- TEACHING -->
+          <tr> 
+            <td class="resume_heading"> 
+              2015-16
+            </td>
+            <td class="resume_body"> 
+              <div class="resume_job_title">Assistant Project & Business Manager</div>
+              <div class="resume_job_company">UNSW Solar Racing Team, Sunswift</div>
+            </td>
+          </tr>
+        </table>
+      </div> <!-- end table --> 
+   	</div> <!-- end resume -->
+
+
+    {% elif page == 'Contact'%}
+    <div class="container">
+
+   	</div>
+    
+    {% endif %}
+
+    <!-- FOOTER --> 
+    <footer class="footer">
+    <div class="container">
+      	<span class="text-muted">
+      		Isaac Carr &middot; isaacdcarr@gmail.com &middot; <a class="fa fa-linkedin" href="http://www.linkedin.com/in/idcarr" target="_blank"></a> 
+      	</span>
+    </footer>
 </body>
 </html>
