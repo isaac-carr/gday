@@ -1,3 +1,18 @@
+#resume {
+	visibility: hidden;
+}
+
+#projects {
+	visibility: hidden;
+}
+#about {
+	visibility: hidden;
+}
+#contact {
+	visibility: hidden;
+}
+
+
 #myfooter {
 	align: center;
 }
