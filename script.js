@@ -48,7 +48,7 @@ function homeFunc(){
 	return;
 }
 
-function func{
+function func(){
 	window.alert("hello");
 	//return;
 }
