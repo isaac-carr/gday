@@ -48,4 +48,8 @@ function homeFunc(){
 	return;
 }
 
+function func{
+	window.alert("hello");
+	return;
+}
 
