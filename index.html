@@ -5,6 +5,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
 	<nav class="navbar navbar-default">
@@ -21,10 +22,10 @@
 
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#contact"  onclick="window.open('http://www.googlecom')">Contact</a></li>
+          <li><a href="#about" onclick="aboutFunc()">About</a></li>
+          <li><a href="#projects" onclick="projectsFunc()">Projects</a></li>
+          <li><a href="#resume" onclick="resumeFunc()">Resume</a></li>
+          <li><a href="#contact" onclick="contactFunc()">Contact</a></li>
         </ul>
       </div>
     </div> <!-- close container div -->
@@ -36,13 +37,16 @@
    
 
     
-   	<div class="container">
-
+   	<div id="home" class="container">
+   		<h1>Home</h1>
+   	</div>
+   	<div id="about" class="container">
+   		<h1>About</h1>	
+   	</div>
+   	<div id="projects" class="container">
+   		<h1>Projects</h1>
    	</div>
     
-    <div class="container">
-   			
-   	</div>
    
     <div id="resume" class="container" visibility="hidden">
       <div class="container">
@@ -134,7 +138,9 @@
       </div> <!-- end table --> 
    	</div> <!-- end resume -->
 
-
+   	<div id="contact" class="container">
+   		<h1>Contact</h1>
+   	</div>
     
     <div class="container">
 
