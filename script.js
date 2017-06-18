@@ -1,5 +1,5 @@
 function resumeFunc(){
-	if (resume.style.visbility == 'visible') return;
+	//if (resume.style.visbility == 'visible') return;
 	resume.style.visbility = 'visible';
 	home.style.visbility = 'hidden';
 	about.style.visbility = 'hidden';
@@ -47,4 +47,5 @@ function homeFunc(){
 	contact.style.visbility = 'hidden';
 	return;
 }
+
 
