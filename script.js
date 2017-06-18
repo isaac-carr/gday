@@ -50,6 +50,6 @@ function homeFunc(){
 
 function func{
 	window.alert("hello");
-	return;
+	//return;
 }
 
