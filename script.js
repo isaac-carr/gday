@@ -19,14 +19,20 @@ function aboutFunc(){
 }
 
 function contactFunc(){
-	if (contact.style.visbility == 'visible') return;
-	resume.style.visbility = 'hidden';
-	home.style.visbility = 'hidden';
-	about.style.visbility = 'hidden';
-	projects.style.visbility = 'hidden';
-	contact.style.visbility = 'visible';
+	var elem = document.getElementById("contact");
+	if (elem.style.visbility == 'hidden') elem.style.visbility = 'visible';
 	return;
 }
+
+// function contactFunc(){
+// 	if (contact.style.visbility == 'visible') return;
+// 	resume.style.visbility = 'hidden';
+// 	home.style.visbility = 'hidden';
+// 	about.style.visbility = 'hidden';
+// 	projects.style.visbility = 'hidden';
+// 	contact.style.visbility = 'visible';
+// 	return;
+// }
 
 function projectsFunc(){
 	if (projects.style.visbility == 'visible') return;
@@ -46,10 +52,5 @@ function homeFunc(){
 	projects.style.visbility = 'hidden';
 	contact.style.visbility = 'hidden';
 	return;
-}
-
-function func(){
-	window.alert("hello");
-	//return;
 }
 
